@@ -11,105 +11,109 @@ body {
   width: 390px;
 }
 
-/*  nav */
+/* NAV */
+ 
 nav {
   width: 100%;
-  background-color: #8B4513; /* marrón */
+  background-color: #8b4513e8;
   padding: 10px 40px;
   display: flex;
-  justify-content: space-between; /* separa logo y enlaces */
-  gap: 0;
-  align-items: center; /* centra verticalmente */
-  flex-wrap: wrap; /* hace que se adapte a pantallas pequeñas */
-  box-sizing: border-box;
-
-    /* --- EFECTO 3D --- */
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3); /* sombra externa */
-  border-bottom: 3px solid #5E2E0C; /* línea más oscura debajo */
+  justify-content: space-between; /* Logo a la izquierda, enlaces a la derecha */
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid #f6e5d9;
+    position: fixed;  
+  /* Nav fijo */
+  position: fixed;
+  top: 0;      
+  left: 0;      
+  z-index: 1000;
 }
-
-/* log y texto*/
+ 
+/* Logo */
 .logo {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-
+ 
 .logo img {
   width: 60px;
   height: auto;
 }
-
-/* Contenedor de texto del logo */
+ 
 .text-logo {
   display: flex;
   flex-direction: column;
   line-height: 1.1;
 }
-
-/* FoodRoom */
+ 
 .food {
   color: white;
   font-weight: bold;
   font-size: 32px;
 }
-
+ 
+.foodcolor{
+  color:brown
+}
+ 
 .room {
   color: #FFB347;
   font-weight: bold;
 }
-
-/* Lema debajo del título */
+ 
 .lema {
-  color: #eb8b46;
+  color: #eedacc;
   font-size: 14px;
 }
-
-/* ENLACES DE NAVEGACIÓN */
+ 
+/* Contenedor de enlaces */
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+ 
+/* Enlaces de navegación */
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 10px;
   font-weight: bold;
   font-family: Arial, sans-serif;
   transition: color 0.3s, background-color 0.3s;
   padding: 8px 12px;
   border-radius: 8px;
 }
-
-/* Botón Inicio destacado */
+ 
 .inicio {
-  background-color: #d49c03; 
+  background-color: #d49c03;
 }
-
-/* Hover */
+ 
 nav a:hover {
   color: #FFD700;
 }
-
-/* Enlace activo (cuando estamos en esa página) */
+ 
 nav a.active {
   background-color: #e8b006;
   color: white;
 }
-
-/* responsive*/
+ 
+/* RESPONSIVE */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
     align-items: flex-start;
   }
-
-  nav a {
-    display: block;
-    margin: 8px 0;
-  }
-
-  .logo {
-    margin-bottom: 10px;
+ 
+  .nav-links {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    margin-top: 10px;
   }
 }
-
+/* AQUI TERMINA EL NAV*/
 /* HERO SECTION */
 .plato {
     text-align: center;
@@ -302,37 +306,97 @@ body {
   background-color: #8B4513;
 }
 
-/*FOOTER GENERAL  */
+/* FOOTER GENERAL */
 .footer {
   width: 100%;
-  background-color: #282421; /* Marrón */
-  padding: 20px 10px;
   text-align: center;
-  box-sizing: border-box;
   font-family: Arial, sans-serif;
-  box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.3); /* leve sombra superior (efecto 3D) */
-  border-top: 3px solid #32CD32; /* verde suave */
+  padding: 20px 0;
+  background-color: #f8f8f8;
 }
-
-/* texto  */
-.footer-datos {
-  color: #FFB347; /* Naranja melocotón */
-  margin: 6px 0;
-  font-size: 14px;
+ 
+/* Línea delgada arriba del logo */
+.footer .card-header {
+  border-top: 2px solid #8B4513;
+  padding-top: 10px;
+  margin-bottom: 10px;
 }
-
-/* link  */
+ 
+/* Centrar la card en el footer */
+.footer .card {
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+ 
+/* Logo dentro del footer */
+.footer .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+ 
+.footer .logo img {
+  width: 60px;
+  height: auto;
+}
+ 
+.footer .text-logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+ 
+.footer .food {
+  font-weight: bold;
+  font-size: 28px;
+  color: #8B4513;
+}
+ 
+.footer .room {
+  color: #FFB347;
+}
+ 
+.footer .lema {
+  font-size: 12px;
+  color: #eb8b46;
+}
+ 
+/* Card body */
+.footer .card-body p {
+  margin: 5px 0;
+}
+ 
+/* Links */
 .footer a {
-  color: #32CD32; /* Verde suave */
+  color: brown;
   text-decoration: none;
   font-weight: bold;
 }
-
+ 
 .footer a:hover {
-  color: #FFD700; /* Dorado al pasar el mouse */
+  color: #FFD700;
 }
+ 
+/* Responsive */
+@media (max-width: 600px) {
+  .footer {
+    padding: 15px;
+  }
+ 
+  .footer .card-body p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+ 
+  .footer .logo {
+    flex-direction: column;
+  }
 
-/*responsive  */
+ 
+/* hasta aqui footer*//
 @media (max-width: 600px) {
   .footer {
     padding: 15px;
