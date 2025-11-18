@@ -9,113 +9,132 @@
   <body >
     
     <header>
-      <nav>
-          <div class="logo">
-              <img src="./logo-food.png" alt="Logo-foodroom">
-
-          <div class="text-logo">  
-          <span class="food">Food <span class="room">Room</span></span>
-          <small class="lema">pasión Culinaria</small>
-          </div>
-          </div>
-
-          <a class="inicio" href="main.html"> <i class="fa-solid fa-house"></i>Inicio</a>
-          <a href="QuiénesSomos.html"> <i class="fa-solid fa-users"></i>Quienes Somos</a>
-          <a href="contactenos.html"> <i class="fa-solid fa-envelope"></i>Contacto</a>
-      </nav>
+    <nav>
+    <div class="logo">
+      <img src="./logo-food.png" alt="Logo-foodroom">
+      <div class="text-logo">
+        <span class="food">Food <span class="room">Room</span></span>
+        <small class="lema">pasión Culinaria</small>
+      </div>
+    </div>
+ 
+ 
+    <div class="nav-links">
+      <a class="inicio" href="main.html"><i class="fa-solid fa-house"></i> Inicio</a>
+      <a href="QuiénesSomos.html"><i class="fa-solid fa-users"></i> Quienes Somos</a>
+      <a href="contactenos.html"><i class="fa-solid fa-envelope"></i> Contacto</a>
+    </div>
+    </nav>
     </header>
     <div id="cuerpo">
-    <main id="cards">
-      <h1 id="titulo">Quienes somos</h1>
-      <div class="card">
-        <img src="/Sean.png" class="foto" alt="Imagen de sean" />
-        <div>
-          <span class="nombre">Sean</span>
-          <p class="infoNosotros">
-            Profesional gastronómico especializado en la elaboración y <br />
-            presentación de platos a base de pasta, con un enfoque en la <br />
-            excelencia culinaria, la organización y la precisión técnica.
-            Destaca
-            <br />
-            por su habilidad para combinar creatividad y método, garantizando
-            <br />
-            resultados consistentes y de alta calidad. Cuenta con una sólida
-            <br />
-            formación en técnicas de cocina italiana y contemporánea, dominio en
-            <br />
-            la preparación de masas frescas, salsas y acompañamientos.
-          </p>
+    <main id="cards" class="d-flex justify-content-center align-items-center">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        style="width: 50%"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+          ></button>
         </div>
-      </div>
-
-      <div class="card">
-        <img src="/Lili.png" class="foto" alt="Imagen de Lily" />
-        <div>
-          <span class="nombre">Lili</span>
-          <p class="infoNosotros">
-            Profesional gastronómico especializado en la preparación y <br />
-            presentación de platos típicos colombianos, con amplia experiencia
-            en
-            <br />
-            la conservación y difusión de las tradiciones culinarias del país.
-            <br />
-            Posee sólidos conocimientos sobre los ingredientes autóctonos,
-            <br />
-            técnicas regionales y métodos de cocción característicos de las
-            <br />
-            distintas zonas gastronómicas de Colombia.
-          </p>
+ 
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="sean.jpg" class="d-block w-50 mx-auto" alt="" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Sean</h5>
+              <p>Chef mexicano.</p>
+            </div>
+          </div>
+ 
+          <div class="carousel-item">
+            <img src="lili.jpg" class="d-block w-50 mx-auto" alt="" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Lili</h5>
+              <p>Chef colombiano</p>
+            </div>
+          </div>
+ 
+          <div class="carousel-item">
+            <img src="jeff.jpg" class="d-block w-50 mx-auto" alt="" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Jefferson</h5>
+              <p>Chef francés</p>
+            </div>
+          </div>
+ 
+          <div class="carousel-item text-secondary">
+            <img src="mateo.jpeg" class="d-block w-50 mx-auto" alt="" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mateo</h5>
+              <p>Chef pastelero</p>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div class="card">
-        <img src="/Jef.png" class="foto" alt="Imagen de Jefferson" />
-        <div>
-          <span class="nombre">Jefferson</span>
-          <p class="infoNosotros">
-            Profesional gastronómico especializado en la cocina tradicional
-            <br />
-            mexicana, con amplia experiencia en la preparación, innovación y
-            <br />
-            presentación de platos emblemáticos que representan la riqueza
-            <br />
-            cultural y culinaria de México. Posee un profundo conocimiento de
-            los
-            <br />
-            ingredientes típicos, técnicas ancestrales y métodos de cocción
-            <br />
-            característicos de las distintas regiones del país.
-          </p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="Mat.png" class="foto" alt="Imagen de mateo" />
-        <div>
-          <span class="nombre">Mateo</span>
-          <p class="infoNosotros">
-            Chef profesional con amplia experiencia en la gastronomía asiática,
-            <br />
-            especializado en las cocinas japonesa, tailandesa, china y
-            vietnamita.
-            <br />
-            Con más de [X] años de trayectoria en restaurantes de alta categoría
-            y
-            <br />
-            hoteles internacionales, destaca por su dominio de técnicas <br />
-            tradicionales y contemporáneas, manejo preciso de ingredientes
-            <br />
-            exóticos y presentación artística de platos.
-          </p>
-        </div>
+ 
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+ 
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
       </div>
     </main>
     </div>
-    <footer class="footer">
-      <p class="footer-datos">Autores: David Mateo Rodriguez, Sean Adrian Vargas, Jeffersson Wilches, Lili Sanchez</p>
-      <p class="footer-datos">Correo: contacto@gmail.com</p>
-      <p class="footer-datos">Nombre del proyecto: Blog de ejemplo</p>
-    </footer>
+    <footer class="footer" >
+ 
+ 
+<div class="card text-center">
+  <div class="card-header">
+    <div class="logo">
+      <img src="./logo-food.png" alt="Logo-foodroom">
+      <div class="text-logo">
+        <span class="food foodcolor">Food <span class="room">Room</span></span>
+        <small class="lema">pasión Culinaria</small>
+      </div>
+    </div>
+ 
+  </div>
+  <div class="card-body">
+    <p class="mb-1"><strong>Autores:</strong> David Mateo Rodriguez <br> Sean Adrian Vargas  <br> Jeffersson Wilches  <br> Lili Sanchez</p>
+    <p class="mb-1"><strong>Correo:</strong> contacto@gmail.com</p>
+    <p class="mb-0"><strong>Nombre del proyecto:</strong> Blog FoodRoom</p>
+    <a href="https://github.com/SeanAdri64/Lab---Refactorizaci-n-del-Blog.git" class="btn btn-primary">Repositorio</a>
+  </div>
+ 
+</div>
+ 
+</footer>
   </body>
 </html>
 
