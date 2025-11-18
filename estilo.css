@@ -1,0 +1,341 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f7f3;
+    color: #333;
+}
+
+/*  nav */
+nav {
+  width: 100%;
+  background-color: #8B4513; /* marrón */
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between; /* separa logo y enlaces */
+  gap: 0;
+  align-items: center; /* centra verticalmente */
+  flex-wrap: wrap; /* hace que se adapte a pantallas pequeñas */
+  box-sizing: border-box;
+
+    /* --- EFECTO 3D --- */
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3); /* sombra externa */
+  border-bottom: 3px solid #5E2E0C; /* línea más oscura debajo */
+}
+
+/* log y texto*/
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 60px;
+  height: auto;
+}
+
+/* Contenedor de texto del logo */
+.text-logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+/* FoodRoom */
+.food {
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.room {
+  color: #FFB347;
+  font-weight: bold;
+}
+
+/* Lema debajo del título */
+.lema {
+  color: #eb8b46;
+  font-size: 14px;
+}
+
+/* ENLACES DE NAVEGACIÓN */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  transition: color 0.3s, background-color 0.3s;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+/* Botón Inicio destacado */
+.inicio {
+  background-color: #d49c03; 
+}
+
+/* Hover */
+nav a:hover {
+  color: #FFD700;
+}
+
+/* Enlace activo (cuando estamos en esa página) */
+nav a.active {
+  background-color: #e8b006;
+  color: white;
+}
+
+/* responsive*/
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+}
+
+/* HERO SECTION */
+.plato {
+    text-align: center;
+    background-color: #f0e4d7;
+    padding: 60px 20px;
+}
+
+.plato h2 {
+    color: #b31b1b;
+}
+
+/* contenido */
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 40px;
+}
+
+.content article {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.content img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/*Parte de quienes somos*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#cuerpo {
+
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+
+#cards {
+    max-width: 1000px;
+    width: 100%;
+}
+
+
+#titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+/* Imagen de la tarjeta */
+.nombre {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.foto {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 2px solid #6c63ff;
+}
+
+
+.infoNosotros {
+    padding-left: 45px;
+    line-height: 1.7;
+    font-size: 1rem;
+    color: #555;
+}
+
+/*Estilos seccion Contactenos (Jeffersson)*/
+body {
+  background-color: white;
+  font-family: Arial, sans-serif;
+  color: #8B4513;
+  margin: 0;
+  padding: 0;
+}
+
+.titulo-contacto {
+  color: #8B4513;
+  font-size: 2.2em;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.descripcion-contacto {
+  color: #FFB347;
+  font-size: 1.1em;
+  margin: 20px 0 40px;
+  max-width: 700px;
+  text-align: center;
+}
+
+.contenedor-contacto {
+  padding: 20px 60px;
+}
+
+.contacto-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.info-contacto {
+  flex: 1;
+  min-width: 280px;
+  background-color: #FFB34720;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contacto {
+  flex: 1;
+  min-width: 280px;
+  background-color: #32CD3210;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contacto label {
+  margin-top: 10px;
+  color: #8B4513;
+  font-weight: bold;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #8B4513;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+  outline: none;
+  border-color: #32CD32;
+}
+
+.formulario-contacto button {
+  background-color: #32CD32;
+  color: white;
+  border: none;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.formulario-contacto button:hover {
+  background-color: #8B4513;
+}
+
+/*FOOTER GENERAL  */
+.footer {
+  width: 100%;
+  background-color: #282421; /* Marrón */
+  padding: 20px 10px;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.3); /* leve sombra superior (efecto 3D) */
+  border-top: 3px solid #32CD32; /* verde suave */
+}
+
+/* texto  */
+.footer-datos {
+  color: #FFB347; /* Naranja melocotón */
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+/* link  */
+.footer a {
+  color: #32CD32; /* Verde suave */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  color: #FFD700; /* Dorado al pasar el mouse */
+}
+
+/*responsive  */
+@media (max-width: 600px) {
+  .footer {
+    padding: 15px;
+  }
+
+  .footer-datos {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+}
+
