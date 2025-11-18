@@ -6,6 +6,11 @@ body {
     color: #333;
 }
 
+.imagesRestaurants{
+  height: 290px;
+  width: 390px;
+}
+
 /*  nav */
 nav {
   width: 100%;
